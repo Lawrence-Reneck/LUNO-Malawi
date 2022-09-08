@@ -38,8 +38,9 @@ class artistController extends Controller
             $imgFile->fit(160, 160, function ($constraint) {
                 $constraint->upsize();
             });
-
-            $imgFile->save(public_path('storage/imagesORartworks/' . $filename));          
+            $path =public_path('storage/imagesORartworks/' . $filename);
+            $requested = str_replace("\\", "/", $path);
+            $imgFile->save($requested);          
                 
 
 

@@ -1,28 +1,11 @@
-<div class="row"> 
-					<div class="6u">
-						<section>
-						<u><h5>NEWS PIE</h5></u>
-						@foreach($news as $news)
-							<header>
-								
-								
-								<br>
-								<h2>{{$news->title}}</h2>
-								<span class=""><strong>source:</strong>{{ $news->source}}</span>
-							</header>
-							<p>
-								{{$news->breaking_news}}
-							</p>
-						@endforeach
-							<a href="/view_breaking_news" class="button">More News</a>
-						</section>
-						
-					</div>
-					<div class="3u">
-						<section class="sidebar">
-							<header>
-								<h2>monthly top 10</h2>
-							</header>
+<div class="container">
+  <div class="row gy-3">
+
+	<div class="col-lg-8 col-md-8 d-flex">
+	  <i class="bi bi-geo-alt icon"></i>
+	  <div>
+		<h4>monthly top 10</h4>
+		<section class="sidebar">
 							<ul class="style2">
 								@foreach($music_mp3s as $music_mp3)
 								<li>
@@ -34,28 +17,56 @@
 								@endforeach
 							</ul>						
 						</section>
-					</div>
-					<div class="3u">
-						<section class="sidebar">
-							<header>
-								<h2>Upcoming artists</h2>
-							</header>
-							<ul class="style1">
-								@foreach($artists_upcoming as $artist_upcoming)
-								<li><a href="show_artist/{{$artist_upcoming->id}}">{{$artist_upcoming->stage_name}} real name {{$artist_upcoming->full_name}}</a></li>
-								@endforeach
-								
-							</ul>
-						</section>
-						<section class="sidebar">
-							<header>
-								<h2>Songs recently added</h2>
-							</header>
-							<ul class="style1">
-							@foreach($songs_recently_added as $song_recently_added)
-								<li><a href="show_song/{{$song_recently_added->id}}">{{$song_recently_added->song_title}} done by {{$song_recently_added->artists->stage_name}}</a></li>
-							@endforeach
-							</ul>
-						</section>
-					</div>
-				</div>
+	  </div>
+	</div>
+
+	<div class="col-lg-4 col-md-4 d-flex">
+	  <h4>Upcoming artists</h4>
+	  <div class="social-links d-flex">
+	  <section class="sidebar">
+		<ul class="style1">
+			@foreach($artists_upcoming as $artist_upcoming)
+			<li><a href="show_artist/{{$artist_upcoming->id}}">{{$artist_upcoming->stage_name}} real name {{$artist_upcoming->full_name}}</a></li>
+			@endforeach
+			
+		</ul>
+	</section>
+	  </div>
+	</div>
+
+  </div>
+</div>
+
+
+<section class="sidebar">
+	<header>
+		<h2>Songs recently added</h2>
+	</header>
+	<ul class="style1">
+	@foreach($songs_recently_added as $song_recently_added)
+		<li><a href="show_song/{{$song_recently_added->id}}">{{$song_recently_added->song_title}} done by {{$song_recently_added->artists->stage_name}}</a></li>
+	@endforeach
+	</ul>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

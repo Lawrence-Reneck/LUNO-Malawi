@@ -1,61 +1,143 @@
-<!DOCTYPE HTML>
-<!--
-	Ex Machina by TEMPLATED
-    templated.co @templatedco
-    Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
--->
-<html>
-	<head>
-		<title>Ex Machina by TEMPLATED</title>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
-		<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:700italic,400,300,700' rel='stylesheet' type='text/css'>
-		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-		<script src="/js/skel.min.js"></script>
-		<script src="/js/skel-panels.min.js"></script>
-		<script src="/js/init.js"></script>
-		<noscript>
-			<link rel="stylesheet" href="/css/skel-noscript.css" />
-			<link rel="stylesheet" href="/css/style.css" />
-			<link rel="stylesheet" href="/css/style-desktop.css" />
-		</noscript>
-		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
-		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
-	</head>
-	<body class="homepage">
-		@include('partials/header')
-	<!-- Header -->
-	
-	<!-- Header -->
-		
-	<!-- Banner -->
-		<div id="banner">
-			<div class="container">
-			</div>
-		</div>
-	<!-- /Banner -->
+<!DOCTYPE html>
+<html lang="en">
 
-	<!-- Main -->
-		<div id="page">
+@include('partials/head')
 
-			<!-- Extra -->
-			   @include('partials/extra')
-			<!-- /Extra -->
-				
-			<!-- Main -->
-			<div id="" class="container" >
-				@include('partials/various_artists')
-			</div>
-			<!-- Main -->
+<body>
 
-		</div>
-	<!-- /Main -->
+  <!-- ======= Header ======= -->
+  @include('partials/header')<!-- End Header -->
+  <!-- ======= Hero Section ======= -->
+ <br>
 
-	<!-- Featured -->
-	
-@include('partials/footer')
+ 
+ <main id="main">
 
-	</body>
+<!-- ======= About Section ======= -->
+<section id="news" class="news">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Our Menu</h2>
+          <p>Check Our <span>Yummy Menu</span></p>
+        </div>
+<div class="tab-content" data-aos="fade-up" data-aos-delay="300">
+
+<div class="tab-pane fade active show" id="menu-starters">
+
+
+  <div class="row gy-5">
+
+	<div class="col-lg-2 menu-item">
+	  <a href="assets/img/menu/menu-item-1.png" class="glightbox"><img src="assets/img/menu/menu-item-1.png" class="menu-img img-fluid" alt=""></a>
+	  <h4>Magnam Tiste</h4>
+	  <p class="ingredients">
+		Lorem, deren, trataro, filede, nerada
+	  </p>
+	  <p class="price">
+		$5.95
+	  </p>
+	</div><!-- Menu Item -->
+
+	<div class="col-lg-2 menu-item">
+	  <a href="assets/img/menu/menu-item-2.png" class="glightbox"><img src="assets/img/menu/menu-item-2.png" class="menu-img img-fluid" alt=""></a>
+	  <h4>Aut Luia</h4>
+	  <p class="ingredients">
+		Lorem, deren, trataro, filede, nerada
+	  </p>
+	  <p class="price">
+		$14.95
+	  </p>
+	</div><!-- Menu Item -->
+
+	<div class="col-lg-2 menu-item">
+	  <a href="assets/img/menu/menu-item-3.png" class="glightbox"><img src="assets/img/menu/menu-item-3.png" class="menu-img img-fluid" alt=""></a>
+	  <h4>Est Eligendi</h4>
+	  <p class="ingredients">
+		Lorem, deren, trataro, filede, nerada
+	  </p>
+	  <p class="price">
+		$8.95
+	  </p>
+	</div><!-- Menu Item -->
+
+	<div class="col-lg-2 menu-item">
+	  <a href="assets/img/menu/menu-item-4.png" class="glightbox"><img src="assets/img/menu/menu-item-4.png" class="menu-img img-fluid" alt=""></a>
+	  <h4>Eos Luibusdam</h4>
+	  <p class="ingredients">
+		Lorem, deren, trataro, filede, nerada
+	  </p>
+	  <p class="price">
+		$12.95
+	  </p>
+	</div><!-- Menu Item -->
+
+	<div class="col-lg-2 menu-item">
+	  <a href="assets/img/menu/menu-item-5.png" class="glightbox"><img src="assets/img/menu/menu-item-5.png" class="menu-img img-fluid" alt=""></a>
+	  <h4>Eos Luibusdam</h4>
+	  <p class="ingredients">
+		Lorem, deren, trataro, filede, nerada
+	  </p>
+	  <p class="price">
+		$12.95
+	  </p>
+	</div><!-- Menu Item -->
+
+	<div class="col-lg-2 menu-item">
+	  <a href="assets/img/menu/menu-item-6.png" class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
+	  <h4>Laboriosam Direva</h4>
+	  <p class="ingredients">
+		Lorem, deren, trataro, filede, nerada
+	  </p>
+	  <p class="price">
+		$9.95
+	  </p>
+	</div>
+	<div class="col-lg-2 menu-item">
+	  <a href="assets/img/menu/menu-item-6.png" class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
+	  <h4>Laboriosam Direva</h4>
+	  <p class="ingredients">
+		Lorem, deren, trataro, filede, nerada
+	  </p>
+	  <p class="price">
+		$9.95
+	  </p>
+	</div>
+	<div class="col-lg-2 menu-item">
+	  <a href="assets/img/menu/menu-item-6.png" class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
+	  <h4>Laboriosam Direva</h4>
+	  <p class="ingredients">
+		Lorem, deren, trataro, filede, nerada
+	  </p>
+	  <p class="price">
+		$9.95
+	  </p>
+	</div>
+	<div class="col-lg-2 menu-item">
+	  <a href="assets/img/menu/menu-item-6.png" class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
+	  <h4>Laboriosam Direva</h4>
+	  <p class="ingredients">
+		Lorem, deren, trataro, filede, nerada
+	  </p>
+	  <p class="price">
+		$9.95
+	  </p>
+	</div>
+<section>
+
+
+
+
+
+@include('partials/various_artists')
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  @include('partials/footer')<!-- End Footer -->
+  <!-- End Footer -->
+
+
+
+</body>
+
 </html>
