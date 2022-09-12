@@ -222,7 +222,7 @@
                     <i class="material-icons">residence </i>
                   </span>
                 </div>
-                <input type="name" name="residence" id="edit_artist_residence" class="form-control" placeholder="<?php echo e(__('residence...')); ?>" required>
+                <input type="name" name="residence" id="edit_artist_residence" class="form-control" placeholder="<?php echo e(__('Lusaka/Zambia or Lilongwe/Malawi')); ?>" required>
               </div>
               <?php if($errors->has('residence')): ?>
                 <div id="residence-error" class="error text-danger pl-3" for="residence" style="display: block;">
@@ -479,7 +479,7 @@
                     <i class="material-icons">residence </i>
                   </span>
                 </div>
-                <input type="name" name="residence" id="residence" class="form-control" placeholder="<?php echo e(__('residence...')); ?>" required>
+                <input type="name" name="residence" id="residence" class="form-control" placeholder="<?php echo e(__('Lusaka/Zambia or Lilongwe/Malawi')); ?>" required>
               </div>
               <?php if($errors->has('residence')): ?>
                 <div id="residence-error" class="error text-danger pl-3" for="residence" style="display: block;">

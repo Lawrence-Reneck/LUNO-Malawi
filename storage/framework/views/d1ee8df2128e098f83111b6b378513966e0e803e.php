@@ -7,8 +7,8 @@
 	  <div>
 		<h4>Address</h4>
 		<p>
-		  A108 Adam Street <br>
-		  New York, NY 535022 - US<br>
+		  Malawi - Zomba <br>
+		  Zambia, Lusaka<br>
 		</p>
 	  </div>
 
@@ -17,10 +17,10 @@
 	<div class="col-lg-3 col-md-6 footer-links d-flex">
 	  <i class="bi bi-telephone icon"></i>
 	  <div>
-		<h4>Reservations</h4>
+		<h4>Direct contacts</h4>
 		<p>
-		  <strong>Phone:</strong> +1 5589 55488 55<br>
-		  <strong>Email:</strong> info@example.com<br>
+		  <strong>Phone:</strong> +265 88 170 40 32<br>
+		  <strong>Email:</strong> lreneck@unima.ac.mw<br>
 		</p>
 	  </div>
 	</div>
@@ -28,10 +28,10 @@
 	<div class="col-lg-3 col-md-6 footer-links d-flex">
 	  <i class="bi bi-clock icon"></i>
 	  <div>
-		<h4>Opening Hours</h4>
+		<h4>Conracting  Hours</h4>
 		<p>
-		  <strong>Mon-Sat: 11AM</strong> - 23PM<br>
-		  Sunday: Closed
+		  <strong>Mon-Sinda: </strong> anytime<br>
+		 
 		</p>
 	  </div>
 	</div>

@@ -12,7 +12,7 @@
           <li><a href="#hero">Home</a></li>
           <li><a class="news" href="/view_breaking_news" >breaking news</a></li>
           <li><a href="/artists_all">artists</a></li>
-          <li><a href="#events">Events</a></li>
+          <!-- <li><a href="#events">Events</a></li> -->
           <li class="dropdown"><a href="#"><span>Top CHARTS</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
 			  <li><a href="#">Trending TOP 20</a></li>

@@ -1,33 +1,36 @@
 <div class="container">
   <div class="row gy-3">
-
 	<div class="col-lg-8 col-md-8 d-flex">
-	  <i class="bi bi-geo-alt icon"></i>
-	  <div>
-		<h4>monthly top 10</h4>
+	  
 		<section class="sidebar">
-							<ul class="style2">
+		 <u><h4>monthly top 10</h4></u>
+							<ul class=" nav">
 								<?php $__currentLoopData = $music_mp3s; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $music_mp3): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+								<div>
 								<li>
 									<a href="#"><img src="images/pics07.jpg" alt=""></a>
-									<p><strong><?php echo e($music_mp3->song_title); ?></strong><br><br><?php echo e($music_mp3->artists->stage_name); ?>
-
-									 </p>
-									<h5><button><a href="/download/<?php echo e($music_mp3->song_mp3); ?>">vote</a></button>  <button class="btn btn-sm"><a href="/show_song/<?php echo e($music_mp3->id); ?>">view & download(<?php echo e($music_mp3->view_count); ?>)</a></button> </h5>
+									<i><strong><?php echo e($loop->iteration); ?>.<?php echo e($music_mp3->song_title); ?></strong> -<?php echo e($music_mp3->artists->stage_name); ?> (<?php echo e($music_mp3->artists->residence); ?>)</i>
+									<h5>  <button class="btn btn-sm"><a href="/show_song/<?php echo e($music_mp3->id); ?>">view/download(<?php echo e($music_mp3->view_count); ?>)</a></button> </h5>
 								</li>
+								
 								<?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+								</div>
 							</ul>						
 						</section>
+						<div>
+						<!-- <button><a href="/download/<?php echo e($music_mp3->song_mp3); ?>">vote</a></button> -->
 	  </div>
 	</div>
 
 	<div class="col-lg-4 col-md-4 d-flex">
-	  <h4>Upcoming artists</h4>
+
 	  <div class="social-links d-flex">
 	  <section class="sidebar">
-		<ul class="style1">
+		<ul class="style1 nav">
+		<h4> <u>Upcoming artists</u> </h4> <br>
 			<?php $__currentLoopData = $artists_upcoming; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $artist_upcoming): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-			<li><a href="show_artist/<?php echo e($artist_upcoming->id); ?>"><?php echo e($artist_upcoming->stage_name); ?> real name <?php echo e($artist_upcoming->full_name); ?></a></li>
+			<li><a href="show_artist/<?php echo e($artist_upcoming->id); ?>"><i class="bi bi-check2-all"></i><?php echo e($artist_upcoming->stage_name); ?> real name <?php echo e($artist_upcoming->full_name); ?></a></li>
+			<br><br>
 			<?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
 			
 		</ul>
